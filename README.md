@@ -4,6 +4,12 @@ Receive a desktop notification when ProtonVPN is not connected.
 
 [ProtonVPN](https://protonvpn.com/) is a VPN solution that comes with a command line utility. This small program was created for a personal need, to alert me from time to time that I'm not connected via VPN. There is no magic behind it: I set it up to run periodically via [cron](https://en.wikipedia.org/wiki/Cron) job, and the script checks the output of the status command and sends a desktop notification if disconnected.
 
+# Prerequisites
+
+* [Alert](https://github.com/haberdashPI/Alert.jl)
+
+See [Standard Library / Pkg](https://docs.julialang.org/en/v1/stdlib/Pkg/) for installation instructions.
+
 # Set up
 
 `protonvpn_status.jl` script assumes the location of `protonvpn` utility to be `/usr/local/bin/protonvpn`, change in the script if needed.
